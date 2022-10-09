@@ -1,0 +1,246 @@
+body{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+div,p {
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	font-weight: 700;
+}
+p{
+	line-height: 1.65em;
+}
+
+
+.header {
+
+	background: rgba(78,191,254,1);
+    background: -moz-linear-gradient(left, rgba(78,191,254,1) 0%, rgba(55,143,217,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(78,191,254,1)), color-stop(100%, rgba(55,143,217,1)));
+    background: -webkit-linear-gradient(left, rgba(78,191,254,1) 0%, rgba(55,143,217,1) 100%);
+    background: -o-linear-gradient(left, rgba(78,191,254,1) 0%, rgba(55,143,217,1) 100%);
+    background: -ms-linear-gradient(left, rgba(78,191,254,1) 0%, rgba(55,143,217,1) 100%);
+    background: linear-gradient(to right, rgba(78,191,254,1) 0%, rgba(55,143,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebffe', endColorstr='#378fd9', GradientType=1 );
+    padding-top: 62px;
+    padding-bottom: 40px;
+    color: #fff;
+
+}
+.container {
+	width: 1171px;
+	margin: 0 auto; /*po centru*/
+	/*border: 2px solid red;*/
+}
+.wrapper {
+display: flex;  /*bloknery irar koxq dnely*/
+justify-content: space-between; 
+
+}
+.dream {
+margin-top: 145px;
+width: 585px;
+
+}
+.title{
+
+	font-size: 37px;
+
+}
+.title span{
+	font-size: 59px;
+}
+.mood {
+font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+margin-top: 40px;
+margin-bottom: 45px;
+width: 400px;
+
+}
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	background: #ffd429;
+	color: #2e2a1b;
+	display: block;
+	width: 222px;
+	padding: 22px 0;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.btn:hover {
+	background: #cba612;
+
+}
+.traveling{
+	/*margin-top: 50px;*/
+}
+
+.future {
+	padding-top: 105px;
+	padding-bottom: 115px;
+}
+.section-title{
+	font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+.life {
+	display: flex;
+	justify-content: space-between; 
+	 text-align: center;
+
+
+}
+
+.block {
+	width: 308px;
+	background: url('../img/icon1.jpg') no-repeat  top;
+	padding-top: 90px;
+	margin-top: 70px;
+
+
+}
+.block-title {
+	font-size: 19px;
+	font-weight: 700;
+}
+
+/*
+.block-text {
+	margin-top:15px;
+}*/
+
+.block-travel {
+width: 275px;
+background: url('../img/icon2.jpg') no-repeat  top;
+}
+ 
+.block-worth {
+background: url('../img/icon3.jpg') no-repeat  top;
+}
+
+.form {
+	background: #ecf3f8;
+	padding-top: 105px;
+	padding-bottom: 105px;
+	text-align: center;
+
+
+}
+.input {
+	width: 100%;
+	border: 1px solid #bbbbbb;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	height: 45px;
+	padding-left: 25px;
+	margin-top: 14px;
+
+}
+
+.btn-form {
+	border:0;
+	cursor: pointer;
+	display: inline;
+	margin-top: 14px;
+
+}
+
+.order {
+	padding-top: 60px;
+	max-width: 343px;
+	margin: 0 auto;
+}
+
+.credits {
+	font-family: 'Open Sans', sans-serif;
+	color: #dde2e8;
+	font-size: 14px;
+	margin: 0;
+	text-align: center;
+}
+.footer {
+	background-color:  #164d7a;
+	padding:62px 0;
+}
+
+
+/*Responsive*/
+
+/*992px -1200px*/
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+    }
+    .wrapper {
+        flex-direction:column;
+    }
+    .logo {
+    	display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .dream {
+    	width: 100%;
+    }
+    .title , .mood{
+    	width: 100%;
+        text-align: center;
+    }
+    .btn {
+    	 margin-left: auto;
+         margin-right: auto;
+    }
+    .traveling {
+    	width: 100%;
+    }
+}
+
+/*768px -992px*/
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+  
+ }
+
+/*576px -768px*/
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+
+	.life{
+		    flex-direction: column;
+	}
+
+	
+    .block {
+    	
+		display: block;
+        margin-left: auto;
+        margin-right: auto;
+         margin-top: 50px;
+	}
+}
+
+/* 0 - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+
+}
